@@ -5,11 +5,9 @@ let prev = document.querySelector(".clientsDesktop #prev");
 
 if (!window.matchMedia('screen (max-width: 500px)').matches){
   imgs[0].classList.add('blur')
-  console.log('hhh')
   imgs[5].classList.add('blur')
 }else{
   imgs[0].classList.add('blur')
-  console.log('hhh')
   imgs[2].classList.add('blur')
 }
 let counter = 0;
