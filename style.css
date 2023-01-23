@@ -527,49 +527,70 @@ h3::selection {
   cursor: pointer;
   background: none;
 }
-.slide-container .btns .dots {
+ .bulletsCLI {
+  width: 145px;
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   column-gap: 24px;
 }
-.slide-container .btns .slider-dot {
-  border: 0.3px solid rgba(249, 204, 17, 0.6);
+ .bulletCLI {
+  position: absolute;
   border-radius: 50px;
   cursor: pointer;
-  width: 10px;
-  height: 10px;
+  visibility: hidden;
 }
-.slide-container .btns .small-dot {
-  width: 8px;
-  height: 8px;
+ .bulletPCLI {
+  border: 1px solid rgba(249, 204, 17, 0.1);
+  right: 147px;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
 }
-.slide-container .btns .slider-dot-active {
+ .bulletNCLI {
+  border: 1px solid rgba(249, 204, 17, 0.1);
+  right: -10px;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+ .active-bulletCLI {
+  right: 66px;
+  visibility: visible;
   background-color: var(--main-color);
+
   width: 13px;
   height: 13px;
 }
-
-/* .clientsDesktop .blurL{
-  width: 200px;
-  height: 110px;
-  background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0) 100%);
-  backdrop-filter: blur(4px);  position: absolute;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  z-index: 7;
+ .next-bulletCLI {
+  border: 1px solid rgba(249, 204, 17, 0.6);
+  right: 32px;
+  visibility: visible;
+  width: 10px;
+  height: 10px;
 }
-.clientsDesktop .blurR{
-  width: 235px;
-  height: 110px;
-  background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0) 100%);
-  backdrop-filter: blur(4px);  position: absolute;
-  position: absolute;
-  top: 50px;
+ .next-next-bulletCLI {
+  border: 1px solid rgba(249, 204, 17, 0.3);
   right: 0;
-  z-index: 7;
-} */
+  visibility: visible;
+  width: 8px;
+  height: 8px;
+}
+ .prev-bulletCLI {
+  border: 1px solid rgba(249, 204, 17, 0.6);
+  right: 103px;
+  visibility: visible;
+  width: 10px;
+  height: 10px;
+}
+ .prev-prev-bulletCLI {
+  border: 1px solid rgba(249, 204, 17, 0.3);
+  right: 137px;
+  visibility: visible;
+  width: 8px;
+  height: 8px;
+}
 
 /* achievement css */
 .achievement {
@@ -824,24 +845,75 @@ h3::selection {
   top: 40%;
   right: 7%; */
 }
-/* .portfolio .blurL{
-  width:250px;
-  height: 70%;
-  background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0) 100%);
-  backdrop-filter: blur(4px);  position: absolute;
-  top: 50px;
-  left: 0;
-  z-index: 7;
+
+
+.bulletsPOR {
+  width: 145px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
 }
-.portfolio .blurR{
-  width:250px;
-  height: 70%;
-  background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0) 100%);
-  backdrop-filter: blur(4px);  position: absolute;
-  top: 50px;
+ .bulletPOR {
+  position: absolute;
+  border-radius: 50px;
+  cursor: pointer;
+  visibility: hidden;
+}
+ .bulletPPOR {
+  border: 1px solid rgba(249, 204, 17, 0.1);
+  right: 147px;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+ .bulletNPOR {
+  border: 1px solid rgba(249, 204, 17, 0.1);
+  right: -10px;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+ .active-bulletPOR {
+  right: 66px;
+  visibility: visible;
+  background-color: var(--main-color);
+
+  width: 13px;
+  height: 13px;
+}
+ .next-bulletPOR {
+  border: 1px solid rgba(249, 204, 17, 0.6);
+  right: 32px;
+  visibility: visible;
+  width: 10px;
+  height: 10px;
+}
+ .next-next-bulletPOR {
+  border: 1px solid rgba(249, 204, 17, 0.3);
   right: 0;
-  z-index: 7;
-} */
+  visibility: visible;
+  width: 8px;
+  height: 8px;
+}
+ .prev-bulletPOR {
+  border: 1px solid rgba(249, 204, 17, 0.6);
+  right: 103px;
+  visibility: visible;
+  width: 10px;
+  height: 10px;
+}
+ .prev-prev-bulletPOR {
+  border: 1px solid rgba(249, 204, 17, 0.3);
+  right: 137px;
+  visibility: visible;
+  width: 8px;
+  height: 8px;
+}
+
+
+
 /* _______________biography css_______________ */
 .biography {
   margin-top: 94px;

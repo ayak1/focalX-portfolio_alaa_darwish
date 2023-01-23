@@ -1,3 +1,4 @@
+////////////////////// Bullets \\\\\\\\\\\\\\\\\\\\\\\\\\
 const bullets = document.querySelector(".bulletsSPC");
 const slides = document.querySelectorAll(".slideSPC");
 const arrowL = document.querySelector(".arrowL");
@@ -110,6 +111,7 @@ const goToPrevBullet = function () {
   }
 }
 }
+////////////////////// Bullets \\\\\\\\\\\\\\\\\\\\\\\\\\
 
 const thGoToSlide = function (current) {
     thSlides.forEach(
